@@ -28,6 +28,7 @@ from .KeepaliveRequests import KeepaliveRequests
 from .KeepaliveTime import KeepaliveTime
 from .KeepaliveTimeout import KeepaliveTimeout
 from .LargeClientHeaderBuffers import LargeClientHeaderBuffers
+from .LimitExcept import LimitExcept
 from .LimitRate import LimitRate
 from .LimitRateAfter import LimitRateAfter
 from .LingeringClose import LingeringClose
@@ -187,6 +188,7 @@ __all__ = [
     "KeepaliveTime",
     "KeepaliveTimeout",
     "LargeClientHeaderBuffers",
+    "LimitExcept",
     "LimitRate",
     "LimitRateAfter",
     "LingeringClose",

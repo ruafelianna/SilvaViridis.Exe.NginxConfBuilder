@@ -66,6 +66,11 @@ class DirectiveBase(ABC):
             if to_str is None:
                 if isinstance(value, Enum):
                     result = DirectiveBase._to_str__enum(value)
+                elif isinstance(value, bool):
+                    if value:
+                        result = prefix
+                    else:
+                        return
                 else:
                     result = str(value)
             else:
